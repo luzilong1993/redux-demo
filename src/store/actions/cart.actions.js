@@ -17,3 +17,9 @@ export const deleteProductFormCart = createAction('deleteProductFormCart');
 
 // 删除本地购物车中的商品
 export const deleteProductFormLocalCart = createAction('deleteProductFormLocalCart');
+
+// 向服务器发送请求，告诉服务器我们将哪一个商品的数量更改成什么
+export const changeServiceProductNumber = createAction('changeProductNumber');
+
+// 更新本地购物车中商品数量
+export const changeLocalProductNumber = createAction('changeLocalProductNumber');
