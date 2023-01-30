@@ -21,7 +21,7 @@ class Product extends Component {
                     {products.map((product) => {
                         return (
                             <div className="shop-item" key={product.id}>
-                                <img className="shop-item-image" src={product.thumbnail} />
+                                <img className="shop-item-image" src={`http://localhost:3005${product.thumbnail}`} />
                                 <span className="shop-item-title">{product.title}</span>
                                 <div className="shop-item-details">
                                     <span className="shop-item-price">￥{product.price}</span>
